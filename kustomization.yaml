@@ -1,0 +1,6 @@
+# ./kustomization.yaml
+resources:
+#- base
+# - overlay
+# #- overlay/manifest/edgetype/facility/kroger/store1
+#- app-1
