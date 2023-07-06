@@ -1,0 +1,22 @@
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: grafana-connection
+spec:
+  refreshInterval: 1h           # rate SecretManager pulls GCPSM
+  secretStoreRef:
+    kind: ClusterSecretStore
+ #   name: gcpsm-secret-store               # name of the SecretStore (or kind specified)
+    name: gcp-secret-store 
+  target:
+    name: grafana-connection  # name of the k8s Secret to be created
+    creationPolicy: Owner
+  data:
+  - secretKey: admin-password  # name of the GCPSM secret key
+    remoteRef:
+      key: grafana-connection
+      property: admin-password
+  - secretKey: admin-user  # name of the GCPSM secret key
+    remoteRef:
+      key: grafana-connection
+      property: admin-user

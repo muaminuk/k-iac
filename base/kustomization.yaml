@@ -1,0 +1,6 @@
+# ./base/kustomization.yaml
+resources:
+- cluster-label.yaml
+- cluster-selector.yaml
+- nginx
+- python-flasks

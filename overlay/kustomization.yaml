@@ -1,0 +1,7 @@
+bases:
+- ../base
+#- manifest/edgetype/facility/state-ak/store1
+# patchesStrategicMerge:
+resources:
+# - manifest/edgetype/facility/kroger/store1
+

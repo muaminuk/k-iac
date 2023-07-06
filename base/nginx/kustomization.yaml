@@ -1,0 +1,2 @@
+resources:
+- nginx_deployment.yaml

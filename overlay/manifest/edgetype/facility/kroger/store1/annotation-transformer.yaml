@@ -1,0 +1,13 @@
+apiVersion: builtin
+kind: AnnotationsTransformer
+metadata:
+  name: annotation-transformer
+annotations:
+  configmanagement.gke.io/cluster-selector: "selector-store-1"
+fieldSpecs:
+- kind: Deployment
+  path: metadata/annotations
+  create: true
+- kind: Service
+  path: metadata/annotations
+  create: true

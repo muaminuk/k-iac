@@ -1,0 +1,5 @@
+app:
+  name: python-flasks
+image:
+  tag: latest
+project_id: us-gcp-ame-con-sjsxu-npd-1

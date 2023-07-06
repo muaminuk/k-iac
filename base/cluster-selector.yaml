@@ -1,0 +1,10 @@
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-store-1
+spec:
+  selector:
+    matchLabels:
+      "store": "1"
+      "env": "prod"
+
