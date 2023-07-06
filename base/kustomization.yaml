@@ -3,4 +3,4 @@ resources:
 - cluster-label.yaml
 - cluster-selector.yaml
 - nginx
-- python-flasks
+# - python-flasks
